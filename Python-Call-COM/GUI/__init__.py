@@ -34,7 +34,7 @@ class App(Tkinter.Tk):
         print self.TradeObject
         self.TradeApp = self.TradeObject.QueryInterface(DJTRADEOBJLibTCST.ITradeApp)
         print self.TradeApp
-        strDas = 'jd-testweb4/tradedas2'
+        strDas = ''
         rtn = self.TradeApp.Init(strDas)
         print rtn
         
@@ -55,6 +55,7 @@ class App(Tkinter.Tk):
         LogoutButton = Button(self, text="Logout", command=self.OnLogoutButtonClick)       
         
         # init Layout component
+        
         self.grid()
         UIDLB.grid(column=0,row=0)
         PwdLB.grid(column=0,row=1)
